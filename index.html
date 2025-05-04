@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LUROS — Натуральні Тверді Шампуні</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    const translations = {
+      uk: {
+        title: 'Натуральні Тверді Шампуні LUROS',
+        subtitle: 'Екологічна турбота про волосся. Без пластику. Без компромісів. Просто природа і чистота.',
+        order: 'Замовити зараз',
+        subscribeTitle: 'Підпишись, щоб отримувати новини та знижки',
+        subscribeBtn: 'Підписатися',
+        privacy: 'Політика конфіденційності',
+        terms: 'Умови використання'
+      },
+      en: {
+        title: 'Natural Solid Shampoos LUROS',
+        subtitle: 'Eco-friendly hair care. No plastic. No compromise. Just nature and purity.',
+        order: 'Order Now',
+        subscribeTitle: 'Subscribe for updates and discounts',
+        subscribeBtn: 'Subscribe',
+        privacy: 'Privacy Policy',
+        terms: 'Terms of Use'
+      }
+    };
+
+    function switchLang(lang) {
+      document.querySelector('header.hero h1').textContent = translations[lang].title;
+      document.querySelector('header.hero p').textContent = translations[lang].subtitle;
+      document.querySelector('.cta button').textContent = translations[lang].order;
+      document.querySelector('.subscribe h2').textContent = translations[lang].subscribeTitle;
+      document.querySelector('.subscribe button').textContent = translations[lang].subscribeBtn;
+      document.querySelector('footer a:nth-child(1)').textContent = translations[lang].privacy;
+      document.querySelector('footer a:nth-child(2)').textContent = translations[lang].terms;
+      document.querySelector('.subscribe input[type="email"]').placeholder = lang === 'en' ? 'Your email address' : 'Ваша електронна адреса';
+      document.documentElement.lang = lang;
+    }
+  </script>
+</head>
+<body>
+  <header class="hero">
+    <div class="lang-switcher">
+      <button onclick="switchLang('uk')">UA</button>
+      <button onclick="switchLang('en')">EN</button>
+    </div>
+    <div class="logo">
+        <img src="/images/logo.png" alt="LUROS logo" class="logo" />
+    </div>
+    <h1>Natural Solid Shampoos LUROS</h1>
+    <p>Eco-friendly hair care. No plastic. No compromise. Just nature and purity.</p>
+  </header>
+
+  <section class="cta">
+    <a href="form.html" class="cta-link">Order Now</a>
+  </section>
+
+  <section class="products">
+    <div class="product-card">
+      <img src="/images/several-shampo.png" alt="LUROS шампуні" />
+      <h3>Assorted natural ingredients</h3>
+      <p>Ideal for daily care of all hair types.</p>
+    </div>
+  </section>
+
+  <h2 style="text-align:center; margin-top:40px;">Our bestsellers</h2>
+<section class="products fade-in">
+  <div class="product-card">
+    <img class="product-card-img" src="/images/white-shampo.png" alt="Твердий шампунь із ромашкою" />
+    <h3>Kaolin</h3>
+    <p>The ideal choice for those who want to restore health and natural shine to their hair.</p>
+    <a href="form.html" ><button class="buy-button">Order Now</button></a>
+    
+  </div>
+  <div class="product-card">
+    <img class="product-card-img" src="/images/green-shampo.png" alt="Шампунь Ламінарія" />
+    <h3>Laminaria</h3>
+    <p>Sea minerals for root strengthening and deep cleansing.</p>
+    <a href="form.html" ><button class="buy-button">Order Now</button></a>
+  </div>
+</section>
+
+  <section class="features">
+    <h2>Why choose LUROS?</h2>
+    <div class="feature-list">
+      <div class="feature">
+        <h3>Sulfate-free</h3>
+        <p>Gently cleanses the scalp without overdrying.</p>
+      </div>
+      <div class="feature">
+        <h3>Compact for travel</h3>
+        <p>No bottles — just a solid form in a convenient format.</p>
+      </div>
+      <div class="feature">
+        <h3>100% natural ingredients</h3>
+        <p>No chemicals. Only plant extracts and essential oils.</p>
+      </div>
+      <div class="feature">
+        <h3>Environmentally friendly packaging</h3>
+        <p>No plastic - care for nature in every detail.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <a href="form.html" class="cta-link">Order Now</a>
+
+  </section>
+
+  <section class="subscribe">
+    <h2>Subscribe for updates and discounts</h2>
+    <form>
+      <input type="email" name="email" placeholder="Write your email" required />
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <section class="testimonials">
+    <h2>Our customers' reviews</h2>
+    <div class="testimonial-list">
+      <div class="testimonial">
+        <p>“The best shampoo I've ever tried. My hair is shiny and voluminous without any chemicals!”</p>
+        <span>— Olena, Kyiv</span>
+      </div>
+      <div class="testimonial">
+        <p>“I take it with me when I travel — it's the perfect format. No bottles, no problems.”</p>
+        <span>— Igor, Lviv</span>
+      </div>
+      <div class="testimonial">
+        <p>“After a few weeks of use, the itchy scalp disappeared. I am very satisfied.”</p>
+        <span>— Natalia, Kharkiv</span>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <br /><br />
+    <p>© 2025 LUROS. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+

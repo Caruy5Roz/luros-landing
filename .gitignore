@@ -1,0 +1,17 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Node or build-related 
+node_modules/
+dist/
+build/
+
+# Netlify
+.netlify/
+
+# Log files
+*.log
+
+# VS Code settings
+.vscode/
