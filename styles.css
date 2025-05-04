@@ -43,7 +43,7 @@ body {
 
 header.hero {
   height: 80vh;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/images/Instagram-05-03-2025_04_23_PM.png) no-repeat center top / cover;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./images/Instagram-05-03-2025_04_23_PM.png) no-repeat center top / cover;
   display: flex;
   flex-direction: column;
   align-items: center;
