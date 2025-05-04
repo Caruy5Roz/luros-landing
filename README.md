@@ -2,8 +2,6 @@
 
 🌿 A clean, eco-conscious landing page for LUROS — a natural solid shampoo brand. No plastic. No compromise. Just nature and purity.
 
-![Website Screenshot](./assets/screenshot.png)
-
 ## 🔗 Live Demo
 Visit the site here: [luros-shampoo.netlify.app](https://luros-shampoo.netlify.app)
 
